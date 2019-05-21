@@ -9,8 +9,11 @@
 <?php
     $weight = $height = '';
     if(isset($_POST['weight']) && isset($_POST['height'])){
-        $weight = (int) $_POST['weight'];
-        $height = (int) $_POST['height'];
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+        $weight = $_POST['weight'];
+        $height = $_POST['height'];
 
         $bmi = $weight/ ($height * $height);
         echo "Chỉ số BMI :" . $bmi;
