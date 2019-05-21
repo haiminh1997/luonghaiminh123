@@ -17,6 +17,25 @@
 
         $bmi = $weight/ ($height * $height);
         echo "Chỉ số BMI :" . $bmi;
+        if($bmi < 18.5 ){
+            echo "Gầy";
+        }
+        elseif (18.5< $bmi < 24.9 ){
+            echo "Bình thường";
+
+        }
+        elseif (25< $bmi < 29.9){
+            echo "Hơi béo";
+        }
+        elseif (30<$bmi<34.9){
+            echo "Béo phì cấp độ 1";
+        }
+        elseif (35<$bmi<39.9){
+            echo "Béo phì cấp độ 2";
+        }
+        elseif (40<$bmi){
+            echo "Béo phì cấp độ 3";
+        }
 
     }
 ?>
