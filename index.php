@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php
+    $weight = $height = '';
     if(isset($_POST['weight']) && isset($_POST['height'])){
         $weight = (int) $_POST['weight'];
         $height = (int) $_POST['height'];
@@ -23,12 +24,12 @@
             <form name="BMI" action="" method="POST">
                 <div class="form-group">
                     <label >Chiều cao(cm)</label>
-                    <input type="text" class="form-control" name="height" placeholder="Height?" value="">
+                    <input type="text" class="form-control" name="height" placeholder="Height?" value="<?php echo $height?>">
 
                 </div>
                 <div class="form-group">
                     <label >Cân nặng(kg)</label>
-                    <input type="text" class="form-control" name="weight" placeholder="Weight?" value="">
+                    <input type="text" class="form-control" name="weight" placeholder="Weight?" value="<?php echo  $weight?>">
                 </div>
 
                 <button type="submit" name="calc" class="btn btn-primary">Submit</button>
