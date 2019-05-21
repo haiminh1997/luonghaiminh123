@@ -23,12 +23,12 @@
             <form name="BMI" action="" method="POST">
                 <div class="form-group">
                     <label >Chiều cao(cm)</label>
-                    <input type="text" class="form-control" name="height" placeholder="Height" value="">
+                    <input type="text" class="form-control" name="height" placeholder="Height?" value="">
 
                 </div>
                 <div class="form-group">
                     <label >Cân nặng(kg)</label>
-                    <input type="text" class="form-control" name="weight" placeholder="Weight" value="">
+                    <input type="text" class="form-control" name="weight" placeholder="Weight?" value="">
                 </div>
 
                 <button type="submit" name="calc" class="btn btn-primary">Submit</button>
