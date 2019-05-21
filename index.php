@@ -27,8 +27,8 @@
 
                 </div>
                 <div class="form-group">
-                    <label >Cân nặng</label>
-                    <input type="password" class="form-control" name="weight" placeholder="Password">
+                    <label >Cân nặng(kg)</label>
+                    <input type="text" class="form-control" name="weight" placeholder="Weight" value="">
                 </div>
 
                 <button type="submit" name="calc" class="btn btn-primary">Submit</button>
