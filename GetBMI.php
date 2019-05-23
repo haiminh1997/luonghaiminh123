@@ -16,7 +16,7 @@ if(isset($_GET['weight']) && isset($_GET['height'])){
     $height = $_GET['height'];
 
     $bmi = $weight/ ($height * $height);
-    echo "Chỉ số BMI :" . $bmi;
+    echo "Chỉ số BMI :" . $bmi ;
     if($bmi < 18.5 ){
         echo "Gầy!";
     }
